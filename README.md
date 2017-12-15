@@ -20,6 +20,12 @@ bash h5ai.sh |tee h5ai.log
 * h5ai目录：`/etc/home/your_domain`
 
 # 更新日志
+### 2017-12-15
+V2.0
+* 添加一键 SSL 配置功能
+* 添加域名 IP 验证
+* 部分 bug 修复
+* 相关依赖完善
 ### 2017-12-14
 V1.0
 * 实现 H5AI 基本功能
