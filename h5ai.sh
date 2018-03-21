@@ -75,7 +75,7 @@ basic_dependency(){
     apt install wget unzip net-tools bc -y     
 }
 nginx_install(){
-        debian_source
+#        debian_source
         apt install nginx -y
         if [[ $? -eq 0 ]];then
             echo -e "${OK} ${GreenBG} nginx 安装成功 ${Font}"
