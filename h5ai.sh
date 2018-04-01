@@ -72,7 +72,7 @@ debian_source(){
 }
 basic_dependency(){
     apt update
-    apt install wget unzip net-tools bc -y     
+    apt install wget unzip net-tools bc curl -y     
 }
 nginx_install(){
 #        debian_source
