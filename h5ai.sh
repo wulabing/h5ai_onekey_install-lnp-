@@ -23,7 +23,7 @@ Error="${Red}[Error]${Font}"
 #folder
 nginx_conf_dir="/etc/nginx/conf.d"
 h5ai_zip="h5ai-0.29.0.zip"
-h5ai_download_http="https://ssss.cat/Personal/${h5ai_zip}"
+h5ai_download_http="https://raw.githubusercontent.com/yanshibin/h5ai_onekey_install-lnp-/master/${h5ai_zip}"
 
 
 source /etc/os-release &>/dev/null
