@@ -9,7 +9,7 @@
 # 安装方式
 
 ```
-git clone https://github.com/wulabing/h5ai_onekey_install-lnp-.git h5ai
+git clone https://github.com/yanshibin/h5ai_onekey_install-lnp-.git h5ai
 cd h5ai
 bash h5ai.sh |tee h5ai.log
 ```
