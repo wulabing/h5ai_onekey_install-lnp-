@@ -17,7 +17,7 @@ bash h5ai.sh |tee h5ai.log
 
 * Nginx：`/etc/nginx`
 * PHP: `/etc/php/7.0`
-* h5ai目录：`/etc/home/your_domain`
+* h5ai目录：`/home/wwwroot/your_domain`
 
 # 更新日志
 ### 2017-12-15
