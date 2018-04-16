@@ -9,7 +9,7 @@
 # 安装方式
 
 ```
-git clone https://github.com/wulabing/h5ai_onekey_install-lnp-.git h5ai
+git clone https://github.com/yanshibin/h5ai_onekey_install-lnp-.git h5ai
 cd h5ai
 bash h5ai.sh |tee h5ai.log
 ```
@@ -17,7 +17,7 @@ bash h5ai.sh |tee h5ai.log
 
 * Nginx：`/etc/nginx`
 * PHP: `/etc/php/7.0`
-* h5ai目录：`/etc/home/your_domain`
+* h5ai目录：`/home/wwwroot/your_domain`
 
 # 更新日志
 ### 2017-12-15
