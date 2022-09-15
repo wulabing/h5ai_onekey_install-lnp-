@@ -86,7 +86,7 @@ nginx_install(){
         fi   
 }
 php7_install(){
-        apt install php7.0-cgi php7.0-fpm php7.0-curl php7.0-gd -y
+        apt install php7.3-cgi php7.3-fpm php7.3-curl php7.3-gd -y
         if [[ $? -eq 0 ]];then
             echo -e "${OK} ${GreenBG} php7 安装成功 ${Font}"
             sleep 1
@@ -105,7 +105,7 @@ server {
     index index.html /_h5ai/public/index.php;        
     location ~ \.php$ {
         include snippets/fastcgi-php.conf;
-        fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+        fastcgi_pass unix:/run/php/php7.3-fpm.sock;
     }
 }
 EOF
@@ -137,7 +137,7 @@ server
         ssl_session_cache builtin:1000 shared:SSL:10m;
         location ~ \.php$ {
             include snippets/fastcgi-php.conf;
-            fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+            fastcgi_pass unix:/run/php/php7.3-fpm.sock;
         }
         location ~ .*\.(gif|jpg|jpeg|png|bmp|swf)$
         {
@@ -294,7 +294,7 @@ standard(){
 ssl(){
 
     systemctl stop nginx
-    systemctl stop php7.0-fpm
+    systemctl stop php7.3-fpm
 
     port_exist_check 80
     port_exist_check 443
@@ -304,7 +304,7 @@ ssl(){
     nginx_conf_ssl_add
 
     systemctl start nginx
-    systemctl start php7.0-fpm
+    systemctl start php7.3-fpm
 }
 main(){
     check_system
